@@ -5,13 +5,13 @@ function Car(make, model) {
 }
 
 // Method for Car prototype
-Car.prototype.getDetails = function () {
+Car.prototype.getMakeModel = function () {
   return `${this.make} ${this.model}`;
 };
 
 // SportsCar constructor
 function SportsCar(make, model, topSpeed) {
-  // Call Car constructor to inherit make and model
+  // Call Car constructor to set make and model
   Car.call(this, make, model);
   this.topSpeed = topSpeed;
 }
